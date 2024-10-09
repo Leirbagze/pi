@@ -1,6 +1,5 @@
 #include "pi.h"
 #include <math.h>
-#include <stdio.h>
 
 double pi_leibniz(double eps, int* n){
     double pi = 0 ; *n = 0 ;
@@ -8,7 +7,6 @@ double pi_leibniz(double eps, int* n){
       pi += 4.*(pow(-1.,*n))/(2*(*n)+1);
       (*n)++;
     }
-    printf("%d\n",*n);
     return pi;
   }
 
