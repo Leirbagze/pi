@@ -1,5 +1,6 @@
 #include "pi.h"
 #include <math.h>
+#include <stdio.h>
 
 int factorielle(int n){
   return f(n,1);
@@ -31,7 +32,7 @@ double pi_machin(double eps, int* n){
       (*n)++;
     }
     return pi ;
-  }
+}
 
 // FACULTATIF
 double pi_ramanujan(int n){
@@ -40,4 +41,4 @@ double pi_ramanujan(int n){
       pi += (2*sqrt(2)/pow(99.,2))*(factorielle(4*i)/pow(factorielle(i),4))*((1103. + 26390.*i)/(pow(396.,4*i)));
     }
     return 1./pi ;
-  }
+}
