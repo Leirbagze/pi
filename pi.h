@@ -3,6 +3,10 @@
 #ifndef _PI_H
 #define _PI_H
 
+int factorielle(int n);
+
+int f(int n, int acc);
+
 /** Calcule une approximation de pi à l'aide de la formule de LEIBNIZ
   * @param eps précision demandée
   * @param n   (sortie uniquement) ordre de la somme partielle retenue
